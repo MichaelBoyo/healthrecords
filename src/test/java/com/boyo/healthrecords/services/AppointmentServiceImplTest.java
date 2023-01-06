@@ -23,7 +23,9 @@ class AppointmentServiceImplTest {
     @BeforeEach
     void setUp() throws PatientNotFoundException {
         patientService.registerPatient(
-                new RegisterPatientRequest("John", "Doe", "09-10-1996", "test@gmail.com", "WeakPassword123")
+                new RegisterPatientRequest("John", "Doe",
+                        "09-10-1996", "test@gmail.com",
+                        "WeakPassword123")
         );
         response = appointmentService.bookAppointment(
                 new BookAppointmentRequest(1L)
