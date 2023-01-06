@@ -25,7 +25,7 @@ public class PatientServiceImpl implements PatientService{
         patient.setPassword(request.getPassword());
 
         patientRepository.save(patient);
-        return new RegisterPatientResponse("patient registered successfully");
+        return new RegisterPatientResponse("patient registered successfully", patient.getId());
     }
 
     @Override

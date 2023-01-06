@@ -1,6 +1,10 @@
 package com.boyo.healthrecords.data.models;
 
+import io.micrometer.common.lang.NonNull;
+import io.micrometer.common.lang.NonNullFields;
+import jakarta.annotation.Nonnull;
 import jakarta.persistence.*;
+import org.aspectj.lang.annotation.RequiredTypes;
 
 
 import java.util.List;

@@ -30,8 +30,10 @@ public class MedicalRecordServiceImpl implements MedicalRecordService {
         medicalRecord.setTemperatureUnit(request.getTemperatureUnit());
         medicalRecord.setDiagnosis(request.getDiagnosis());
         medicalRecordRepository.save(medicalRecord);
-        return new AddRecordResponse("record added successfully");
+        return new AddRecordResponse("record added successfully",  getPatientMedicalRecord(patient.getId()));
     }
+
+
 
     @Override
     public List<MedicalRecord> getPatientMedicalRecord(Long patientID) {
