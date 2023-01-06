@@ -4,6 +4,8 @@ import com.boyo.healthrecords.data.dataTransferObjects.requests.BookAppointmentR
 import com.boyo.healthrecords.data.dataTransferObjects.requests.RegisterPatientRequest;
 import com.boyo.healthrecords.data.dataTransferObjects.responses.BookAppointmentResponse;
 import com.boyo.healthrecords.exceptions.PatientNotFoundException;
+import com.boyo.healthrecords.services.appointment.AppointmentService;
+import com.boyo.healthrecords.services.patients.PatientService;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

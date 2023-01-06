@@ -4,10 +4,11 @@ import com.boyo.healthrecords.data.dataTransferObjects.requests.AddRecordRequest
 import com.boyo.healthrecords.data.dataTransferObjects.requests.RegisterPatientRequest;
 import com.boyo.healthrecords.data.dataTransferObjects.responses.AddRecordResponse;
 import com.boyo.healthrecords.exceptions.PatientNotFoundException;
+import com.boyo.healthrecords.services.medicalRecords.MedicalRecordService;
+import com.boyo.healthrecords.services.patients.PatientService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.core.AutoConfigureCache;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -25,8 +26,8 @@ class MedicalRecordServiceImplTest {
     @BeforeEach
     void setUp() throws PatientNotFoundException {
         patientService.registerPatient(
-                new RegisterPatientRequest("", "",
-                        "", "", "")
+                new RegisterPatientRequest("Michael", "Boyo",
+                        "09-10-1995", "testmail@mail.com", "estPassword123")
         );
         response = medicalRecordService.addRecord(
                 new AddRecordRequest(1L, 123.5, "well", "celsius")

@@ -1,4 +1,4 @@
-package com.boyo.healthrecords.services;
+package com.boyo.healthrecords.services.medicalRecords;
 
 import com.boyo.healthrecords.data.dataTransferObjects.responses.AddRecordResponse;
 import com.boyo.healthrecords.data.dataTransferObjects.requests.AddRecordRequest;

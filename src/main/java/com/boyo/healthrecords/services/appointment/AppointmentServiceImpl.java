@@ -1,4 +1,4 @@
-package com.boyo.healthrecords.services;
+package com.boyo.healthrecords.services.appointment;
 
 import com.boyo.healthrecords.data.dataTransferObjects.requests.BookAppointmentRequest;
 import com.boyo.healthrecords.data.dataTransferObjects.responses.BookAppointmentResponse;
@@ -6,6 +6,7 @@ import com.boyo.healthrecords.data.models.Appointment;
 import com.boyo.healthrecords.data.models.Patient;
 import com.boyo.healthrecords.data.repository.AppointmentRepository;
 import com.boyo.healthrecords.exceptions.PatientNotFoundException;
+import com.boyo.healthrecords.services.patients.PatientService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

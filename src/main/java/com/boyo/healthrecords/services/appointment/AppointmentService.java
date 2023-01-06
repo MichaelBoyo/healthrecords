@@ -1,4 +1,4 @@
-package com.boyo.healthrecords.services;
+package com.boyo.healthrecords.services.appointment;
 
 import com.boyo.healthrecords.data.dataTransferObjects.requests.BookAppointmentRequest;
 import com.boyo.healthrecords.data.dataTransferObjects.responses.BookAppointmentResponse;

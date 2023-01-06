@@ -1,4 +1,4 @@
-package com.boyo.healthrecords.services;
+package com.boyo.healthrecords.services.medicalRecords;
 
 import com.boyo.healthrecords.data.dataTransferObjects.requests.AddRecordRequest;
 import com.boyo.healthrecords.data.dataTransferObjects.responses.AddRecordResponse;
@@ -6,6 +6,7 @@ import com.boyo.healthrecords.data.models.MedicalRecord;
 import com.boyo.healthrecords.data.models.Patient;
 import com.boyo.healthrecords.data.repository.MedicalRecordRepository;
 import com.boyo.healthrecords.exceptions.PatientNotFoundException;
+import com.boyo.healthrecords.services.patients.PatientService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
